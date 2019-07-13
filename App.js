@@ -3,18 +3,18 @@ import { StyleSheet, ScrollView, View, Text, StatusBar } from 'react-native';
 import { Header, Colors, DebugInstructions, ReloadInstructions } from 'react-native/Libraries/NewAppScreen';
 
 // Custom Component
-import Search from './Components/Search';
+import Navigation from './Navigation/Navigation';
 
 const App = () => {
   return (
-    <View>
-      <Search />
-    </View>
+    <Navigation />
   );
 };
 
 const styles = StyleSheet.create({
-  
+  main_container: {
+    flex: 1
+  }
 });
 
 export default App;
